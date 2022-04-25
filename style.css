@@ -10,8 +10,12 @@
 
 #meme-text {
     position: absolute;
-    padding-top: 450px;
+    padding-top: 370px;
     padding-left: 10px;
+    color: white;
+    font-size: 30px;
+    text-shadow: black 5px 5px 5px;
+    word-break: break-word; /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/overflow-wrap <-- Aqui que eu descobri essa propriedade.*/
 }
 
 #meme-image {
