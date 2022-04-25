@@ -14,3 +14,18 @@ botaoMemeInsert.addEventListener('change', function (event) { // https://www.cod
     image.src = URL.createObjectURL(event.target.files[0])
     containerMeme.appendChild(image)
 })
+
+
+// ------------------------------------------------------------
+
+document.querySelector('#fire').addEventListener('click', function () {
+    containerMeme.style.border = '3px dashed red'
+})
+
+document.querySelector('#water').addEventListener('click', function() {
+    containerMeme.style.border = '5px double blue'
+})
+
+document.querySelector('#earth').addEventListener('click', function() {
+    containerMeme.style.border = '6px groove green'
+})
