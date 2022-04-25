@@ -1,0 +1,19 @@
+#meme-image-container {
+    position: absolute;
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+}
+
+/* https://www.w3schools.com/cssref/pr_class_position.asp <-- Me ajudou na parte de posicionar o texto do meme*/
+
+#meme-text {
+    position: absolute;
+    padding-top: 450px;
+    padding-left: 10px;
+}
+
+#meme-image {
+    height: 100%;
+    width: 100%;
+}
