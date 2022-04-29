@@ -1,54 +1,68 @@
 #meme-image-container {
-    position: absolute;
-    background-color: white;
-    border: 1px solid black;
-    width: 500px;
-    height: 500px;
+  position: relative;
+  background-color: white;
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
 }
 
-/* https://www.w3schools.com/cssref/pr_class_position.asp <-- Me ajudou na parte de posicionar o texto do meme*/
+/* https://www.w3schools.com/cssref/pr_class_position.asp
+   Me ajudou na parte de posicionar o texto do meme */
 
 #meme-text {
-    position: absolute;
-    padding-top: 370px;
-    padding-left: 10px;
-    color: white;
-    font-size: 30px;
-    text-shadow: black 5px 5px 5px;
-    word-break: break-word; /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/overflow-wrap <-- Aqui que eu descobri essa propriedade.*/
+  position: absolute;
+  padding-top: 370px;
+  padding-left: 10px;
+  color: white;
+  font-size: 30px;
+  text-shadow: black 5px 5px 5px;
+  word-break: break-word;/* https://developer.mozilla.org/pt-BR/docs/Web/CSS/overflow-wrap
+  Aqui que eu descobri essa propriedade. */
 }
 
 #meme-image {
-    height: 100%;
-    width: 100%;
-    background-color: white;
+  height: 100%;
+  width: 100%;
+  background-color: white;
 }
 
 #buttons {
-    display: inline-block;
-    margin-top: 520px;
+  margin-top: 15px;
+  display: inline-block;
 }
 
 #fire {
-    background-color: red;
-    border: 0.5px solid black;
-    width: 50px;
-    height: 25px;
-    color: white;
+  background-color: red;
+  border: 0.5px solid black;
+  width: 50px;
+  height: 25px;
+  color: white;
 }
 
 #water {
-    background-color: blue;
-    border: 0.5px solid black;
-    width: 50px;
-    height: 25px;
-    color: white;
+  background-color: blue;
+  border: 0.5px solid black;
+  width: 50px;
+  height: 25px;
+  color: white;
 }
 
 #earth {
-    background-color: green;
-    border: 0.5px solid black;
-    width: 50px;
-    height: 25px;
-    color: white;
+  background-color: green;
+  border: 0.5px solid black;
+  width: 50px;
+  height: 25px;
+  color: white;
+}
+
+#imagensPreProntas {
+  display: inline-block;
+}
+
+#imagensPreProntas img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  margin: 10px;
+  margin-right: 10px;
 }
