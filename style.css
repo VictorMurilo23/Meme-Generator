@@ -108,6 +108,7 @@
 #imagensPreProntas img {
   cursor: pointer;
   width: 9em;
+  height: 8.9em;
   border: 2px solid black;
   margin: 10px;
   margin-right: 10px;
