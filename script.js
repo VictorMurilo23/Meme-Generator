@@ -3,21 +3,33 @@ const containerMeme = document.querySelector('#meme-image-container');
 const image = document.querySelector('#meme-image');
 const inputText = document.querySelector('#text-input');
 const memeText = document.querySelector('#meme-text');
+const imagesContainer = document.querySelector('#imagensPreProntas')
 const meme1 = document.querySelector('#meme-1');
 const meme2 = document.querySelector('#meme-2');
 const meme3 = document.querySelector('#meme-3');
 const meme4 = document.querySelector('#meme-4');
 
-// let srcUploadImage = null;
+let srcUploadImage = null;
 
 inputText.addEventListener('keyup', () => { // Texto do meme
   memeText.id = 'meme-text';
   memeText.innerText = inputText.value;
 });
 
+function newImage(src) {
+  const img = document.createElement('img');
+  img.src = src;
+  img.addEventListener('click', () => {
+    image.src = img.src;
+  });
+  imagesContainer.appendChild(img);
+}
+
 memeInsertBtn.addEventListener('change', (event) => { // https://www.codegrepper.com/code-examples/javascript/how+to+show+uploaded+image+in+js <-- Me ajudou a fazer essa parte.
 // Imagem meme
-  image.src = URL.createObjectURL(event.target.files[0]);
+  srcUploadImage = URL.createObjectURL(event.target.files[0]);
+  image.src = srcUploadImage;
+  newImage(srcUploadImage);
 });
 
 document.querySelector('#fire').addEventListener('click', () => { // Botão fire
